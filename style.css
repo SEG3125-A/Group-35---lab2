@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri;
+    /* background-color: #f4f4f4; */   
+
+}
+
+/* source: CSS Horizontal Navigation Bar, w3schools.com, accessed january 2023 */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+  #logo{
+    float: left;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  #logo a:hover{
+    background-color: #333;
+  }
+
+  #logo a{
+    color:#45d4a0;
+  }
