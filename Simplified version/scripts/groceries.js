@@ -230,53 +230,53 @@ function restrictListProducts(prods, restriction, restriction2) {
 	for (let i=0; i<prods.length; i+=1) {
 		if ((restriction2 == "organic") && (prods[i].organic == true)){
 			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 			else if (restriction == "None"){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 		}
 		else if ((restriction2 == "non-organic") && (prods[i].organic == false)){
 			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}	
 			else if (restriction == "None"){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 			}
 		else if (restriction2 == "no preferences"){
 			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 			else if (restriction == "None"){
-				product_names.push(prods[i].name);
+				product_names.push(prods[i]);
 			}
 		}
 		
