@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Customer</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
+<head>
+    <title>Customer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <!-- source: CSS Horizontal Navigation Bar, w3schools.com, accessed january 2023 -->
-        <ul class="navbar">
-            <li id="logo"><a href="index.html">ShippyShop</a></li>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a class="active" href="customer.html">Customer</a></li>
-            
-        </ul>
-    </body>
+<body>
+
+    <!-- Code for X inspired by https://www.w3schools.com/css/css_navbar.asp -->
+    <ul class="navbar">
+        <li id="logo"><a href="index.html">ShippyShop</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a class="active" href="customer.html">Customer</a></li>
+
+    </ul>
+
+    <div> Your Profile </div>
+    <div> Fill in your profile to have refined product suggestions</div>
+    <form action="">
+        <div class="question">
+            <label for="q1">Select the diet that applies to you:</label>
+            <select name="q1" id="q1">
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="GlutenFree">Gluten-free</option>
+                <option value="None">None</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q2">Product preferences:</label>
+            <select name="q2" id="q2">
+                <option value="organic">Organic products</option>
+                <option value="non-organic">Non-organic products</option>
+                <option value="no preferences">No preferences</option>
+            </select>
+
+        </div>
+
+        <p>*Don't forget to save in order to apply your preferences</p>
+
+        <div class="submit-area">
+            <input type="button" onclick="alert('Your changes have been saved!')" value="SAVE" id="submit">
+        </div>
+
+        <script src="customer.js"></script>
+</body>
+
 </html>
