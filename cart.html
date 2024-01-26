@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Customer</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+	<head>
+        
+		<title>Shopping Cart </title>
 
-    <body>
+		<link rel="stylesheet" href="cart_style.css">
 
-        <!-- source: CSS Horizontal Navigation Bar, w3schools.com, accessed january 2023 -->
-        <ul class="navbar">
-            <li id="logo"><a href="index.html">ShippyShop</a></li>
-            <li><a class="active" href="cart.html">Cart</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="customer.html">Customer</a></li>
-            
-        </ul>
-    </body>
+	</head>
+	<body>
+		<ul class="navbar">
+			<li id="logo"><a>ShippyShop</a></li>
+			<li><a href="cart.html">Cart</a></li>
+			<li><a href="product.html">Product</a></li>
+			<li><a href="customer.html">Customer</a></li>
+			
+		</ul>
+		
+		<div class="shopping-cart">
+			<h1 class = "cart-header"> ORDER LIST</h1>	
+		</div>
+			
+		<div class="product-item">
+			<img src= "path/here" class="myImageStyle"><!--path not yet implemented-->
+			<div class="product-info">
+				<h4 class="product-name">Butter</h4>
+				<p class="product-price">$14.29</p> 
+			</div>
+			<input type="number" class="quantity" value="1">
+			<p class="subtotal">$14.290</p>
+		</div>
+		
+		<!--document.getElementById('destination').innerHTML += '<p>' + myData + '</p>';-->
+		<!--This is the javascript code to populate the product item list in javascript-->
+		<div class="promotion-code"><!--can be eliminated-->
+			<input type="text" placeholder="Coupon code">
+			<button class="btn">Apply Coupon</button>
+		</div>
+
+		<div class="cart-totals">
+			<p class="subtotal"><strong>Subtotal:</strong> $14.29</p>
+			<p class="total"><strong>Total:</strong> $14.29</p>
+			<button class="btn">Proceed to Checkout</button>
+		</div>
+		</div>
+		
+
+		<script src="cart.js"></script>
+	</body>
 </html>
