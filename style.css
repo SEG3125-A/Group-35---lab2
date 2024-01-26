@@ -53,3 +53,118 @@ ul {
   #logo a{
     color:#45d4a0;
   }
+
+  /* end of navbar's CSS */
+
+  /* start of home page's CSS */
+  #home{
+    
+    background-image: url(img/wallpaper1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  #quotes{
+    font-size: 5vw;
+    text-align: center;
+    font-weight: 600;
+    font-family:cursive;
+    color:#2f604e;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  #homeButtons{
+    padding-left: 26%;
+  }
+
+  #homeButtons a{
+    text-decoration: none;
+    
+  }
+
+  #homeButtons button{
+    background-color: #333;
+    color: white;
+    font-family: calibri;
+    font-size: 2vw;
+    border-radius: 30px;
+    width: 20vw;
+    height: 5vw;
+    border-style: none;
+    margin:15px;
+  }
+
+  #homeButtons button:hover{
+    background-color: #04AA6D;
+  }
+  /* end of home page's CSS */
+
+  /* start for customer page's CSS */
+
+  #customer{
+    background-color: rgba(227, 223, 220, 0.965);
+  }
+
+  #profile_header{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color:#2f604e;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  #questionaire{
+    background-color: snow;
+    margin: 0 20%;
+    padding-bottom: 20px;
+  }
+  .color_add{
+    height: 10px;
+    background-color: #04AA6D;
+    margin-bottom: 20px;
+    
+  }
+
+ .question{
+    margin: 20px 0px 20px 10%;
+    
+    font-size: large;
+  }
+
+  #profile_intro{
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: large;
+  }
+
+  .submit-area {
+    text-align: center;
+    margin: 20px;
+}
+
+#questionaire p{
+  margin: 40px 0px 20px 10%;
+  font-size: smaller;
+  color:grey;
+}
+
+
+#submit {
+    padding: 10px 20px;
+    background-color:#04AA6D;
+    font-family: calibri;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#submit:hover {
+    background-color:#2f604e;
+}
