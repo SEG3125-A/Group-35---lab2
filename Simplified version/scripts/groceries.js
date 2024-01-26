@@ -3,140 +3,192 @@
 
 var products = [
 	{
-		name: "brocoli",
+		name: "Brocoli",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
+		organic: false,
 		price: 1.99
 	},
 	{
-		name: "celery",
+		name: "Organic Brocoli",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
+		organic: true,
+		price: 2.99
+	},{
+		name: "Celery",
+		vegan: true,
+		vegetarian: true,
+		glutenFree: true,
+		lactosefree: true,
+		organic: false,
 		price: 2.20
 	},
 	{
-		name: "carrot",
+		name: "Organic Celery",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
+		organic: true,
+		price: 2.20
+	},
+	{
+		name: "Carrot",
+		vegan: true,
+		vegetarian: true,
+		glutenFree: true,
+		lactosefree: true,
+		organic: false,
 		price: 1.25
 	},
 	{
-		name: "potato",
+		name: "Organic Carrot",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
-		price: 1.01
-	},
-	{
-		name: "blueberry",
-		vegan: true,
-		vegetarian: true,
-		glutenFree: true,
-		lactosefree: true,
-		price: 2.75
-	},
-	{
-		name: "banana",
-		vegan: true,
-		vegetarian: true,
-		glutenFree: true,
-		lactosefree: true,
-		price: 0.75
-	},
-	{
-		name: "kiwi",
-		vegan: true,
-		vegetarian: true,
-		glutenFree: true,
-		lactosefree: true,
+		organic: true,
 		price: 2.25
 	},
 	{
-		name: "tofu",
+		name: "Banana",
+		vegan: true,
+		vegetarian: true,
+		glutenFree: true,
+		lactosefree: true,
+		organic: false,
+		price: 0.75
+	},
+	{
+		name: "Organic Banana",
+		vegan: true,
+		vegetarian: true,
+		glutenFree: true,
+		lactosefree: true,
+		organic: true,
+		price: 2.25
+	},
+	{
+		name: "Tofu",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: false,
 		lactosefree: true,
+		organic: false,
 		price: 2.99
 	},
 	{
-		name: "white bread",
+		name: "White Bread",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: false,
 		lactosefree: true,
+		organic: false,
 		price: 2.35
 	},
 	{
-		name: "milk bread",
+		name: "Milk Bread",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: false,
 		lactosefree: false,
+		organic: false,
 		price: 3.50
 	},
 	{
-		name: "milk",
+		name: "Milk",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: false,
+		organic: false,
 		price: 3.10
 	},
 	{
-		name: "greek yogurt",
+		name: "Greek Yogurt",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: false,
+		organic: false,
 		price: 3.50
 	},
 	{
-		name: "ground beef",
+		name: "Ground Beef",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
 		lactosefree: true,
+		organic: false,
 		price: 5.99
 	},
 	{
-		name: "pork chops",
+		name: "Organic Ground Beef",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
 		lactosefree: true,
+		organic: true,
+		price: 6.99
+	},
+	{
+		name: "Pork Chops",
+		vegan: false,
+		vegetarian: false,
+		glutenFree: true,
+		lactosefree: true,
+		organic: false,
 		price: 4.99
 	},
 	{
-		name: "chicken breasts",
+		name: "Organic Pork Chops",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
 		lactosefree: true,
+		organic: true,
+		price: 5.99
+	},
+	{
+		name: "Chicken Breasts",
+		vegan: false,
+		vegetarian: false,
+		glutenFree: true,
+		lactosefree: true,
+		organic: false,
 		price: 6.50
 	},
 	{
-		name: "salmon",
+		name: "Organic Chicken Breasts",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
 		lactosefree: true,
+		organic: true,
+		price: 7.50
+	},
+	{
+		name: "Salmon",
+		vegan: false,
+		vegetarian: false,
+		glutenFree: true,
+		lactosefree: true,
+		organic: false,
 		price: 10.00
 	},
 	{
-		name: "tuna",
+		name: "Organic Salmon",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
 		lactosefree: true,
-		price: 8.99
+		organic: true,
+		price: 11.00
 	},
 	{
 		name: "potato chips",
@@ -144,15 +196,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
+		organic: false,
 		price: 2.40
-	},
-	{
-		name: "crackers",
-		vegan: true,
-		vegetarian: true,
-		glutenFree: false,
-		lactosefree: true,
-		price: 1.70
 	},
 	{
 		name: "key lime pie",
@@ -160,6 +205,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: false,
 		lactosefree: false,
+		organic: false,
 		price: 7.75
 	},
 	{
@@ -168,6 +214,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: false,
 		lactosefree: false,
+		organic: false,
 		price: 8.00
 	}
 	
@@ -178,27 +225,67 @@ var products = [
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
 
-function restrictListProducts(prods, restriction) {
+function restrictListProducts(prods, restriction, restriction2) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-			product_names.push(prods[i].name);
+		if ((restriction2 == "organic") && (prods[i].organic == true)){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i].name);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i].name);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i].name);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i].name);
+			}
+			else if (restriction == "None"){
+				product_names.push(prods[i].name);
+			}
 		}
-		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-			product_names.push(prods[i].name);
+		else if ((restriction2 == "non-organic") && (prods[i].organic == false)){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i].name);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i].name);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i].name);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i].name);
+			}	
+			else if (restriction == "None"){
+				product_names.push(prods[i].name);
+			}
+			}
+		else if (restriction2 == "no preferences"){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i].name);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i].name);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i].name);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i].name);
+			}
+			else if (restriction == "None"){
+				product_names.push(prods[i].name);
+			}
 		}
-		else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
-			product_names.push(prods[i].name);
-		}
-		else if ((restriction == "Vegan") && (prods[i].vegan == true)){
-			product_names.push(prods[i].name);
-		}
-		else if (restriction == "None"){
-			product_names.push(prods[i].name);
-		}
+		
 	}
 	return product_names;
 }
+
+
+
 //rounds sometimes bugged values to the hundredth 
 function round(num, places) {
     var multiplier = Math.pow(10, places);
