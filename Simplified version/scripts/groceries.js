@@ -191,7 +191,7 @@ var products = [
 		price: 11.00
 	},
 	{
-		name: "potato chips",
+		name: "Potato chips",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
@@ -200,7 +200,7 @@ var products = [
 		price: 2.40
 	},
 	{
-		name: "key lime pie",
+		name: "Key lime pie",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: false,
@@ -209,7 +209,7 @@ var products = [
 		price: 7.75
 	},
 	{
-		name: "chocolate cake",
+		name: "Chocolate cake",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: false,
@@ -281,6 +281,11 @@ function restrictListProducts(prods, restriction, restriction2) {
 		}
 		
 	}
+
+	// sorting the products by price
+	product_names.sort((p1,p2) =>{
+		return p1.price - p2.price;
+	});
 	return product_names;
 }
 
