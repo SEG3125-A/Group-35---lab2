@@ -2,82 +2,87 @@
 <html>
 
 <head>
-        <title>ShippyShop</title>
-     	<link rel="stylesheet" href="style/style.css">
+    <title>ShippyShop</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <!-- Tab links, each one with an onclick event associated with it -->
+
 <body id="home">
-<ul class="navbar">
-<li id="logo"><a>ShippyShop</a></li>     
-<div class="tab">
-<button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
-<button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-<button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
-</div>
-</ul>
-<!-- Tab links, each one with an onclick event associated with it -->
+    <ul class="navbar">
+        <li id="logo"><a onclick= "openInfo(event,'home')">ShippyShop</a></li>
+        <div class="tab">
+            
+            <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+            <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+            <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+        </div>
+    </ul>
+    <!-- Tab links, each one with an onclick event associated with it -->
 
 
-<!-- Tab content -->
-<div id="Client" class="tabcontent">
-<div id="profile_header">Profile </div>
+    <!-- Tab content -->
+    <div id="Client" class="tabcontent">
+        <div id="profile_header">Profile </div>
 
- <form action="" id="questionaire">
-    <div class="color_add"></div>
-    <div id="profile_intro"> Fill in your profile to have refined product suggestions</div>
-    <div class="question">
-    <label for="q1">Select the diet that applies to you:</label>
-    <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-    <option value="Vegetarian">Vegetarian</option>
-    <option value="Vegan">Vegan</option>
-    <option value="LactoseFree">Lactose-Free</option>
-    <option value="GlutenFree">Gluten-free</option>
-    <option value="None">None</option>
-    </select>
-</div>
+        <form action="" id="questionaire">
+            <div class="color_add"></div>
+            <div id="profile_intro"> Fill in your profile to have refined product suggestions</div>
+            <div class="question">
+                <label for="q1">Select the diet that applies to you:</label>
+                <select id="dietSelect" name="dietSelect"
+                    onchange="populateListProductChoices(this.id, 'displayProduct')">
+                    <option value=""></option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="LactoseFree">Lactose-Free</option>
+                    <option value="GlutenFree">Gluten-free</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
 
-<div class="question">
-	<label for="q2">Product preferences:</label>
-    <select name="q2" id="q2">
-        <option value="no preferences">No preferences</option>
-        <option value="organic">Organic products</option>
-        <option value="non-organic">Non-organic products</option>
-    </select>
-</div>
+            <div class="question">
+                <label for="q2">Product preferences:</label>
+                <select name="q2" id="q2">
+                    <option value="no preferences">No preferences</option>
+                    <option value="organic">Organic products</option>
+                    <option value="non-organic">Non-organic products</option>
+                </select>
+            </div>
 
-</div>
+    </div>
 
-</div>
-<div id="Products" class="tabcontent">
-<div id="profile_header">Your Available Products</div>
+    </div>
+    <div id="Products" class="tabcontent">
+        <div id="profile_header">Your Available Products</div>
 
- <form action="" id="questionaire">
-    <div class="color_add"></div>
-    <div id="profile_intro">Items shown are based on your dietary restrictions</div>
-    <div class="question">
-    <label for="display">Select the products </label>
-    <div id="displayProduct"></div>
-    <button id="addCart" type="button" class="block" onclick="selectedItems()">
-		Add selected items to cart.
-	</button>
-</div>
+        <div class="content">
+            <div class="color_add"></div>
+            <div id="profile_intro">Items shown are based on your dietary restrictions</div>
+            <div class="question">
+                <label for="display">Select the products </label>
+                <div id="displayProduct"></div>
+                <button id="addCart" type="button" class="block" onclick="selectedItems()">
+                    Add selected items to cart.
+                </button>
+            </div>
+        </div>
 
-</div>
+    </div>
 
-<div id="Cart" class="tabcontent">
-<div id="profile_header">Your Cart</div>
+    <div id="Cart" class="tabcontent">
+        <div id="profile_header">Your Cart</div>
 
- <form action="" id="questionaire">
-    <div class="color_add"></div>
-    <div id="profile_intro">Here are the item(s) you added to the cart</div>
-    <div class="question">
-    <div id="displayCart"></div>
-</div>
-
-<script src="scripts/groceries.js"></script>
-<script src="scripts/main.js"></script>
+        <div class="content">
+            <div class="color_add"></div>
+            <div id="profile_intro">Here are the item(s) you added to the cart</div>
+            <div class="question">
+                <div id="displayCart"></div>
+            </div>
+        </div>
+            <script src="scripts/groceries.js"></script>
+            <script src="scripts/main.js"></script>
 
 </body>
+
 </html>
