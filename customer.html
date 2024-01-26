@@ -21,12 +21,12 @@
     <div> Fill in your profile to have refined product suggestions</div>
     <form action="">
         <div class="question">
-            <p>Select the diet(s) that applies to you:</p>
-            <input type="checkbox" value="vegetarian" name="option-1" id="vegetarian">
-            <label for="option-1"> Vegetarian</label>
-            <br>
-            <input type="checkbox" value="gluten-free" name="option-2" id="gluten-free">
-            <label for="option-2"> Gluten-free</label>
+            <label for="q1">Select the diet that applies to you:</label>
+            <select name="q1" id="q1">
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="GlutenFree">Gluten-free</option>
+                <option value="None">None</option>
+            </select>
         </div>
 
         <div class="question">
@@ -38,6 +38,8 @@
             </select>
 
         </div>
+
+        <p>*Don't forget to save in order to apply your preferences</p>
 
         <div class="submit-area">
             <input type="button" onclick="alert('Your changes have been saved!')" value="SAVE" id="submit">
