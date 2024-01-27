@@ -8,7 +8,7 @@
 
 <!-- Tab links, each one with an onclick event associated with it -->
 
-<body id="home">
+<body id="home" onload="populateListProductChoices(dietSelect.id, 'displayProduct', q2.id)">
     <ul class="navbar">
         <li id="logo"><a onclick= "openInfo(event,'home')">ShippyShop</a></li>
         <div class="tab">
@@ -30,7 +30,7 @@
     <div id="profile_intro"> Fill in your profile to have refined product suggestions</div>
     <div class="question">
     <label for="q1">Select the diet that applies to you:</label>
-    <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct', q2.id)">
+    <select id="dietSelect" name="dietSelect">
     <option value="None">None</option>
     <option value="Vegetarian">Vegetarian</option>
     <option value="Vegan">Vegan</option>
@@ -41,7 +41,7 @@
 
 <div class="question">
 	<label for="q2">Product preferences:</label>
-    <select name="q2" id="q2" onchange="populateListProductChoices(dietSelect.id, 'displayProduct', this.id)">
+    <select name="q2" id="q2">
         <option value="no preferences">No preferences</option>
         <option value="organic">Organic products</option>
         <option value="non-organic">Non-organic products</option>
@@ -50,7 +50,7 @@
 
 
         <div class="submit-area">
-            <input type="button" onclick="populateListProductChoices(q1.id, 'displayProduct', q2.id)" value="SAVE" id="submit">
+            <input type="button" onclick="populateListProductChoices(dietSelect.id, 'displayProduct', q2.id)" value="SAVE" id="submit">
         </div>
 
 </div>
@@ -64,6 +64,7 @@
             <div id="profile_intro">Items shown are based on your dietary restrictions</div>
             <div class="question">
                 <label for="display">Select the products </label>
+                <br>
                 <div id="displayProduct"></div>
                 <button id="addCart" type="button" class="block" onclick="selectedItems()">
                     Add selected items to cart.

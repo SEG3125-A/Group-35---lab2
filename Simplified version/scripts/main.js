@@ -78,6 +78,7 @@ function selectedItems(){
 	var para = document.createElement("P");
 	para.innerHTML = "You selected : ";
 	para.appendChild(document.createElement("br"));
+	para.appendChild(document.createElement("br"));
 	for (i = 0; i < ele.length; i++) { 
 		if (ele[i].checked) {
 			para.appendChild(document.createTextNode(ele[i].value));
@@ -88,6 +89,7 @@ function selectedItems(){
 		
 	// add paragraph and total price
 	c.appendChild(para);
+	para.appendChild(document.createElement("br"));
 	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
 		
 }
