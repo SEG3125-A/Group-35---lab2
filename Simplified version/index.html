@@ -8,9 +8,9 @@
 
 <!-- Tab links, each one with an onclick event associated with it -->
 
-<body id="home" onload="populateListProductChoices(dietSelect.id, 'displayProduct', q2.id)">
+<body id="home" onload="populateListProductChoices(dietSelect.id, 'displayProduct', q2.id)" onpageshow="openInfo(event,'presentation')">
     <ul class="navbar">
-        <li id="logo"><a onclick= "openInfo(event,'home')">ShippyShop</a></li>
+        <li id="logo"><a class="tablinks"  onclick="openInfo(event,'presentation')">ShippyShop</a></li>
         <div class="tab">
             
             <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
@@ -18,9 +18,23 @@
             <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
         </div>
     </ul>
+
+    
     <!-- Tab links, each one with an onclick event associated with it -->
-
-
+    <!-- home page design -->
+    <div class="tabcontent" id="presentation">
+        <div id="quotes">Grocery shopping made easy</div>
+        <div id="homeButtons">
+            <a>
+                <button onclick="openInfo(event, 'Client')">Build your profile</button>
+            </a>
+            
+            <a>
+                <button onclick="openInfo(event, 'Products')">Shop now</button>
+            </a>
+            
+        </div>
+    </div>
     <!-- Tab content -->
     <div id="Client" class="tabcontent">
         <div id="profile_header">Profile </div>

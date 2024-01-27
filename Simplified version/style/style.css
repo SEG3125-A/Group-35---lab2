@@ -17,7 +17,6 @@
   padding: 14px 16px;
   transition: 0.3s;
   background-color: black;
-  margin-top: 1.2px;
 }
 /* Change background color of buttons on hover */
 .tab button:hover {
@@ -62,6 +61,11 @@
 body {
     font-family: Calibri;
     /* background-color: #f4f4f4; */   
+    background-image: url(wallpaper1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  
 
 }
 
@@ -104,12 +108,11 @@ ul {
   /* end of navbar's CSS */
 
   /* start of home page's CSS */
-  #home{
-    
-    background-image: url(img/wallpaper1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+  
+  #presentation{
+    display: none;
+  padding: 6px 12px;
+
   }
 
   #quotes{
